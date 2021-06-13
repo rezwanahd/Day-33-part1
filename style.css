@@ -19,7 +19,10 @@ ul.primary-menu li a{
     color: #111;
     font-weight: 500;
 }
-ul.primary-menu li a:hover{}
+ul.primary-menu li a:hover{
+    color: #e83b3e;
+    letter-spacing: 1px;
+}
 
 /* Drown Down */
 ul.primary-menu li{
@@ -31,6 +34,7 @@ ul.primary-menu li ul{
     top: 150%;
     left: 0;
     background: #fff;
+    
     list-style: none;
     padding: 10px;
     box-shadow: 0px 0px 15px 0px rgb(0,0,0,.1);
@@ -39,7 +43,7 @@ ul.primary-menu li ul{
     visibility: hidden;
     transition: all .5s;
 }
-ul.primary-menu li:hover ul{
+ul.primary-menu li:hover > ul{
     opacity: 1;
     visibility: visible;
     top: 120%;
@@ -65,10 +69,10 @@ ul.primary-menu li ul li ul {
     visibility: hidden;
 
 }
-ul.primary-menu li ul li:hover ul{
+/* ul.primary-menu li ul li:hover ul{
     opacity: 1;
     visibility: visible;
-}
+} */
 
 /* Menu Right */
 
