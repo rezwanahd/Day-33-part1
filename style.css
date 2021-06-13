@@ -21,7 +21,6 @@ ul.primary-menu li a{
 }
 ul.primary-menu li a:hover{
     color: #e83b3e;
-    letter-spacing: 1px;
 }
 
 /* Drown Down */
@@ -42,6 +41,7 @@ ul.primary-menu li ul{
     opacity: 0;
     visibility: hidden;
     transition: all .5s;
+    z-index: 2;
 }
 ul.primary-menu li:hover > ul{
     opacity: 1;
@@ -53,8 +53,12 @@ ul.primary-menu li:hover > ul{
 ul.primary-menu li ul li{
     flex-direction: column;
 }
-ul.primary-menu li ul li a{}
-ul.primary-menu li ul li a:hover{}
+ul.primary-menu li ul li a{
+    transition: .4s;
+}
+ul.primary-menu li ul li a:hover{
+    letter-spacing: 1px;
+}
 
 /* 2nd Drop Down */
 ul.primary-menu li ul li{
